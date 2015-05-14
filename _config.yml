@@ -1,6 +1,6 @@
 name: Yarock
 markdown: redcarpet
-baseurl:
+baseurl: /yarock
 redcarpet:
   extensions:
     - hard_wrap
