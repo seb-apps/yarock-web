@@ -1,6 +1,6 @@
 name: Yarock
 markdown: redcarpet
-baseurl: yarock
+baseurl: /yarock
 production_url : http://seb-apps.github.io/yarock
 redcarpet:
   extensions:
