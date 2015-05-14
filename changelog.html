@@ -1,0 +1,467 @@
+---
+layout: default
+title: Yarock - Changelog
+menuItem: changelog
+---
+
+<h1>Changelog</h1>
+
+<h3>1.1.2  - PUBLIC RELEASE - may 2015</h3>
+<li>New    : add alternate mpv audio engine (mplayer based) </li>
+<li>New    : add "search and play" option for quick playing tracks according to your search result </li>
+<li>New    : add add equalizer support for vlc audio engine (vlclib > 2.2) </li>
+<li>BugFix : vlc audio engine -> fix volume management </li>
+<li>BugFix : vlc audio engine -> fix backwards seeking </li>
+<li>BugFix : fix minor issue when dragging tracks to the bottom of playqueue</li>
+<li>Change : Dirble radio use api v2 </li>
+<li>Change : improve media key support</tr>
+<li>Change : improve Qt5 building support</li>
+<li>Change : various minor ui fix and changes</li>
+
+<h3>1.0.1  - PUBLIC RELEASE - mars 2015</h3>
+<li>BugFix : database issue </li>
+<li>BugFix : fix song lenght update (#1393027) </li>
+<li>BugFix : Jumbled Text in Settings Area (#1394508)  </li>
+<li>BugFix : minor ui presentation for filesystem view </li>
+<li>BugFix : image for stream management </li>
+<li>Change : add ascending order for filesystem view </li>
+<li>Change : file dialog open user music folder by default if exists </li>
+<li>Change : file dialog in settings -> open saved directory </li>
+<li>Change : easiest first time user startup  </li>
+<li>Change : add saving position in browser view </li>
+<li>Change : update and add translation </li>
+  
+<h3>1.0.0  - PUBLIC RELEASE - november 2014</h3>
+<li>New    : new clean and elegant design, new icon set, new app icon </li>
+<li>New    : add support for artists images (new view, download artists images) </li>
+<li>New    : save rating to file </li>
+<li>New    : add advanced library search </li>
+<li>New    : add album cover for playqueue widget </li>
+<li>New    : add stars rating for playqueue widget </li>
+<li>New    : add multiple tracks edition </li>
+<li>Change : rewrite now playing widget </li>
+<li>Change : improve browser view multiple selection with SHIFT key </li>
+<li>Change : improve artist/album/track tags edition </li>
+<li>Change : support more scalable ui items </li>
+<li>Change : file dialog various improvements </li>
+<li>BugFix : improve file system view performance </li>
+<li>BugFix : fix "open with" yarock from KDE menu </li>
+<li>BugFix : fix playqueue restoration at startup </li>
+<li>BugFix : fix translation installation path </li>
+<li>BugFix : rating mp3 tag reading </li>
+<li>BugFix : minor fix for genre sorting view </li>
+  
+<h3>0.9.67 - PUBLIC RELEASE - may 2014</h3>
+<li>Change : improve database incremental update </li>
+<li>Change : improve playqueue content save/restore performance </li>
+<li>Change : improve playlist editor </li>
+<li>Change : new dirble api implementation </li>
+<li>BugFix : phonon vlc crash on stream network error (with phonon media queue empty) </li>
+<li>BugFix : fix crash on app closing </li>
+<li>BugFix : fix playing update statu </li>
+  
+<h3>0.9.66 - PUBLIC RELEASE - april 2014</h3>
+<li>New : add contextual playing information for stream </li>
+<li>New : improve contextual playing information </li>
+<li>New : internet radio services </li>
+<li>New : improve contextual menu for artist/album/track </li>
+<li>New : add settings option to restore or not playqueue at startup   </li>
+<li>New : add settings option to chose/sort lyrics provider for contextual lyrics </li>
+<li>New : improve navigation between artist/album/track </li>
+<li>BugFix : minor fix for filesystem view </li>
+<li>BugFix : fix text antialiasing issue </li>
+<li>BugFix : crash with vlc network access error on stream loading </li>
+  
+<h3>0.9.65 - PUBLIC RELEASE - December 2013</h3>
+<li>New : add file system browser view </li>
+<li>New : add tunein stream image download support </li>
+<li>New : add option to remove or not duplicate tracks in playqueue </li>
+<li>New : improve discography part in context view </li>
+<li>New : add loading status when building database   </li>
+<li>BugFix : fix last fm now playing method </li>
+<li>BugFix : fix crash on browser favorite view </li>
+<li>BugFix : fix crash on menu  bar clicking  </li>
+<li>BugFix : fix mpris2 support </li>
+<li>BugFix : fix smart playlist edition (losing configuration) </li>
+<li>BugFix : fix little freeze when entering view by genre </li>
+<li>BugFix : fix browser item right click in case of single item selection </li>
+<li>BugFix : fix file dialog issue </li>
+<li>BugFix : fix regression on tracks move inside playqueue </li>
+<li>Change : improve settings view </li>
+<li>Change : lot of code rewrite/refactoring  </li> 
+<li>Building : change to facilitate fedora packaging (thanks to fedora community help) </li>
+  
+<h3>0.9.64 - PUBLIC RELEASE - November 2013</h3>
+<li>New : add support for multiset album (grouping or not) </li>
+<li>New : add support to drag from playqueue to file browser  </li>
+<li>New : add standalone vlc audio engine (without phonon layer) </li>
+<li>New : add option to choose color scheme </li>
+<li>BugFix : fix multithreading issue when populating playqueue </li>
+<li>BugFix : fix cover searcher threadmanager </li>
+<li>BugFix : fix crash on media item context menu access </li>
+<li>BugFix : fix lyricsmania extraction rule   </li>
+<li>BugFix : fix echonest artist image download </li>
+<li>BugFix : fix context view item layout update </li>
+<li>BugFix : fix seek bar and time label widget spacing </li>
+<li>Change : reorganise code structure </li>
+<li>Change : rewrite file dialogs </li>
+<li>Change : replace navigator bar by a menu icon bar </li>
+<li>Change : lot of minor ui improvement </li>
+  
+<h3>0.9.63 - PUBLIC RELEASE - June 2013</h3>
+<li>New : add Tunein radio service</li>
+<li>New : add cover art reading from ogg/flac file</li>
+<li>Change : code refactoring for radio stream services</li>
+<li>BugFix : playlist editor crash</li>
+<li>BugFix : sorting on track duration</li>
+<li>BugFix : playqueue move item</li>
+<li>BugFix : fix playqueue keyboard enter action</li>
+  
+<h3>0.9.62 - PUBLIC RELEASE - May 2013</h3>
+<li>New : add playqueue filter and sort toolbar</li>
+<li>New : add support for multiple item selection</li>
+<li>New : add support for mpris2 interface</li>
+<li>New : add completer for music explorer search field</li>
+<li>New : add keyboard shortcut to jump to current playing track</li>
+<li>New : add option to disable volume notification</li>
+<li>Change : change build system to cmake</li>
+<li>Change : change application name from YaRock to "yarock" without upper case</li>
+<li>Change : minor rewrite code for dbus notification</li>
+<li>Change : single click on shortcut widget in settings page to trigger shortcut dialogs</li>
+<li>BugFix : restore drag and drop track from history view</li>
+<li>BugFix : crash on playqueue restoration</li>
+<li>BugFix : random playing from playqueue</li>
+  
+<h3>0.9.61 - PUBLIC RELEASE - Mars 2013</h3>
+<li>New : improve system color sheme support (bug ##928789)</li>
+<li>New : add rating edition in browser (bug #1102794)</li>
+<li>New : add different rating color in case of auto rating vs user rating</li>
+<li>BugFix : CPU too high when playing  (bug #1119970)</li>
+<li>BugFix : item context menu (bug #1102793)</li>
+<li>BugFix : crash on file path broken with vlc backend (ok with gstreamer)</li>
+<li>BugFix : automatic rating for artist wrong computation</li>
+<li>BugFix : fix playing button action when no track is selected (play first track in playqueue) </li>
+<li>BugFix : fix file include for building on mandriva</li>
+<li>Change : add Ctr+F shortcut to focus on search line edit widget</li>
+<li>Change : improve statusWidget design</li>
+<li>Change : improve playqueue view update</li>
+<li>Change : minor settings pages UI update</li>
+<li>Change : change playcount representation</li>
+<li>Change : rewrite core data management</li>
+<li>Change : rewrite pixmap caching management</li>
+<li>Change : delete provided custom font (use system font)</li>
+<li>Change : improve history with pretty category name</li>
+<li>Change : remove boost library dependency</li>
+  
+<h3>0.0.60 - PUBLIC RELEASE - January 2013</h3>
+<li>New : add jump to now playing artis/album/track</li>
+<li>New : add rating edition in now playing widget</li>
+<li>New : add filtering support for dashboard view</li>
+<li>New : add context view information (artist discography)</li>
+<li>New : add new settings dialogs page instead of dialog window</li>
+<li>New : add new dialog to add internet stream</li>  
+<li>BugFix : fix artist database edition</li>
+<li>BugFix : add a limit to "never played tracks" smart playlist to avoid UI freeze</li>
+<li>BugFix : fix discogs album cover issue (api key + other minor bug)</li>
+<li>BugFix : fix playlist parser absolute path detection</li>
+<li>BugFix : fix smart playlist default sorting order</li>
+<li>BugFix : fix player playing transition</li>
+<li>Change : improve remote playlist download</li>
+<li>Change : rewrite history management and history view</li>
+<li>Change : rewrite context view management and widgets</li>
+<li>Change : rewrite playlist editor (use threadmanager)</li>
+<li>Change : rewrite track info providers (lastfm, discogs, echonest)</li>
+<li>Change : rewrite web link widget for context view</li>
+<li>Change : update libechonest library</li>
+<li>Change : update lyrics info provider data  </li>
+<li>Change : update icons and minor ui changes</li>
+<li>Change : update translations</li>
+  
+<h3>0.0.59 - PUBLIC RELEASE - October 2012</h3>
+<li>0.0.59 - New : add parsing of disk number tags (bug:#1079803)</li>
+<li>0.0.59 - BugFix : fix building issue for standard C++ function (std::random_shuffle)</li>
+<li>0.0.59 - Bugfix : fix playqueue information for extended mode when file access failed</li>
+<li>0.0.59 - Change : Code refactoring for database scanner</li>
+  
+<h3>0.0.58 - PUBLIC RELEASE - August 2012</h3>
+<li>0.0.58 - New : add option du disable menu on mouse over (Launchpad bug #1041611)</li>
+<li>0.0.58 - New : add a basic stream list editor (for custom user stream file)</li>
+<li>0.0.58 - New : add ctrl/click on item to enqueue in playqueue </li>
+<li>0.0.58 - BugFix : wrong context view update</li>
+<li>0.0.58 - BugFix : wrong .pro file for translation isntallation</li>
+<li>0.0.58 - BugFix : wrong playlist view update when adding playlist with playlist editor</li>
+<li>0.0.58 - BugFix : favorite radio stream view (bug in 0.0.57)</li>
+<li>0.0.58 - Change : minor user interface update</li>
+<li>0.0.58 - Change : minor improvment for playlist editor</li>
+<li>0.0.58 - Change : update translations</li>
+<li>0.0.58 - Change : force detection of header "EXTM3U" for M3u file</li>
+<li>0.0.58 - Change : update update right click menu for stream item</li>
+  
+<h3>0.0.57 - PUBLIC RELEASE - August 2012</h3>
+<li>0.0.57 - New : enhanced right click menu for artist/album items</li>
+<li>0.0.57 - New : improve artiste name display (artist view)</li>
+<li>0.0.57 - New : add messages in view in case of empty result in radio streammodel</li>
+<li>0.0.57 - New : add support for custom sysray icon</li>
+<li>0.0.57 - New : add option to start with hidden windows if systray is activated</li>
+<li>0.0.57 - BugFix : wrong album metada update </li>
+<li>0.0.57 - BugFix : fix insensitive sorting for artist view</li>
+<li>0.0.57 - BugFix : track queuing with phonon-vlc</li>
+<li>0.0.57 - BugFix : artist rating display</li>
+<li>0.0.57 - Bugfix : lack in dbus now playing notification under some system (mandriva + phonon-gstreamer)</li>
+<li>0.0.57 - Bugfix wrong playing item update (in case of symlink)</li>
+<li>0.0.57 - Bugfix volume menu location (on some distro like mandriva)</li>
+<li>0.0.57 - Bugfix crash when enabling equalizer </li>
+<li>0.0.57 - Change: Rewrite equalizer settings management</li> 
+<li>0.0.57 - Change sorting for album by year view</li>
+<li>0.0.57 - Change : update qxt provided library to 0.6.2</li>
+<li>0.0.57 - Change : rewrite contextual right click menu</li>
+<li>0.0.57 - Change : fix icecast "Unspecified name" entries</li>
+<li>0.0.57 - Change : minor graphic update and layout improvments</li>
+<li>0.0.57 - Change : code clean up & refactoring (global actions)</li>
+  
+<h3>0.0.56 - PUBLIC RELEASE - May 2012</h3>
+<li>0.0.56 - New : add option to stop after specific track in playqueue</li>
+<li>0.0.56 - New : add option to resume playback at startup</li>
+<li>0.0.56 - New : add option to stop or not playing on playqueue clear action</li>
+<li>0.0.56 - New : add tag reading for "ALBUM-ARTIST" metadata in case of flac/ogg file (launchpad Bug #969987)</li>
+<li>0.0.56 - BugFix : lyrics fetching broken for release 0.0.55</li>
+<li>0.0.56 - BugFix : collection browser alignement is not correct (launchpad Bug #965146)</li>
+<li>0.0.56 - BugFix : fix crash at player stopped event on MAGEAI linux (launchpad Bug #969990)</li>
+<li>0.0.56 - BugFix : fix unstranslated string (rewrite SmartPlaylist part) (launchpad Bug #969988)</li>
+  
+<h3>0.0.55 - PUBLIC RELEASE - March 2012</h3>
+<li>0.0.55 - New : add track/album/artist rating support</li>
+<li>0.0.55 - New : smart playlist generator</li>
+<li>0.0.55 - New : add playlist editor   </li>
+<li>0.0.55 - New : add advance media search engine</li>
+<li>0.0.55 - New : add cover search from discogs</li>
+<li>0.0.55 - Change : delete file browser view  </li>
+<li>0.0.55 - Change : rewrite/change diashboard view  </li>
+<li>0.0.55 - Change : improve playlist file database handling</li>
+<li>0.0.55 - Change : improve history database handling</li>
+<li>0.0.55 - BugFix : track time tracking invalid (lauchpad bug : #887505)  </li>
+<li>0.0.55 - BugFix : add artist name to albums views  (lauchpad bug : #927557)</li>
+<li>0.0.55 - BugFix : (partially ) add option to enqueue media item into playqueue (lauchpad bug : #927747)</li>
+<li>0.0.55 - BugFix : bugfix color sheme for dark theme (lauchpad bug : #928789)</li>
+<li>0.0.55 - BugFix : improve loading collection time (lauchpad bug : #927563)</li>
+<li>0.0.55 - BugFix : crash when database is rebuilding and next mediaitem is requested (data model cleared)</li>
+<li>0.0.55 - BugFix : album update info not working</li>
+<li>0.0.55 - Minor Change : default font, gui minor changes</li>  
+  
+<h3>0.0.54 - PUBLIC RELEASE - January 2012</h3>
+<li>0.0.54 - New : support replaygain tag (volume normalization)</li>
+<li>0.0.54 - New : new layout for playlist</li>
+<li>0.0.54 - New : add hide/show now playing widget option</li>
+<li>0.0.54 - New : add basic key support (delete/play) for playlist view</li>
+<li>0.0.54 - New : add multiple selection in playlist views</li> 
+<li>0.0.54 - New : add delete multiple selected files from playlist </li>
+<li>0.0.54 - New : add internal track move in playlist</li> 
+<li>0.0.54 - Update Czech translation (thanks to pavel)</li>
+<li>0.0.54 - BugFix : crash when adding manual url to playlist</li>
+<li>0.0.54 - BugFix : crask on right click on the playlist</li>
+<li>0.0.54 - BugFix : total time track not updated all the time</li>
+<li>0.0.54 - GUI : change browser color scheme </li>
+<li>0.0.54 - GUI : status widget rework and replace statusbar</li>
+<li>0.0.54 - GUI : current playing track put in tool bar (instead of old status bar)</li>
+<li>0.0.54 - Internal code rewrite (engineplayer, merge with inforesolver code)</li>
+  
+<h3>0.0.53 - PUBLIC RELEASE - December 2011</h3>
+<li>0.0.53 - New : add remote control through command line </li>
+<li>0.0.53 - New : add remote control through mpris1 interface</li>
+<li>0.0.53 - New : add option to hide status bar and new status widget instead</li>
+<li>0.0.53 - New : add option to perform a simple database update</li>
+<li>0.0.53 - New : option active(de-activate) notification/mpris/systray without restarting</li>
+<li>0.0.53 - New : add m4a/aac format support (depending on phonon backend to be played)</li>
+<li>0.0.53 - New : add volume Up/Down/Mute media key support</li> 
+<li>0.0.53 - Changes : lastfm authentication rework</li>
+<li>0.0.53 - Changes : improve status message for database loading or scanning</li>
+<li>0.0.53 - Changes : delete useless Menu Bar</li>
+<li>0.0.53 - Changes : notification through  dbus</li>
+<li>0.0.53 - Changes : improve looking under different theme</li>
+<li>0.0.53 - BugFix : shurtcut media key update</li>
+<li>0.0.53 - BugFix : volume menu location</li>
+<li>0.0.53 - BugFix : compact widget with bad resize</li>
+<li>0.0.53 - Improve internal settings management system</li>
+<li>0.0.53 - Internal Code rewriting (engine player, user dialog)</li>
+<li>0.0.53 - Internal Code rewriting (threadmanager, search cover thread)</li>
+  
+<h3>0.0.52 - PUBLIC RELEASE - October 2011</h3>
+<li>0.0.52 - New : save and restore settings for Repeat & Shuffle mode</li>
+<li>0.0.52 - BugFix : wrong database user modification</li>
+<li>0.0.52 - BugFix : scrobbler lasf fm wrong init</li>
+<li>0.0.52 - BugFix : missing icons & delete unused font</li>
+  
+<h3>0.0.51 - PUBLIC RELEASE - July 2011</h3>
+<li>0.0.51 - New : add dashboard view with most played chart</li>
+<li>0.0.51 - New : add support for album & artists playcount (database change !)</li>
+<li>0.0.51 - New : add dynamic layout for context view</li>
+<li>0.0.51 - New : add information for track view</li>
+<li>0.0.51 - Changes : improve Database version detection & rebuild</li>
+<li>0.0.51 - BugFix : crash on user Database change when browser is populating</li>
+<li>0.0.51 - BugFix : fix smart playlist creation</li>
+<li>0.0.51 - BugFix : fix first start widget size</li>
+  
+<h3>0.0.50 - New : add now playing desktop notification</h3>
+<li>0.0.50 - New : dynamic layout resize for the collection browser </li>
+<li>0.0.50 - New : add option to remove duplicate stream</li>
+<li>0.0.50 - New : add tooltip for stream with url</li>
+<li>0.0.50 - New : improve failed stream detection</li>
+<li>0.0.50 - New : add search support for prev/next history navigation </li>
+<li>0.0.50 - New : add menu entry for file browsing depending on mounted devices (etc/mtab)</li>
+<li>0.0.50 - New : add Romanian translation (thanks to Sebastian)</li>
+<li>0.0.50 - GUI : add custom font (Segoe UI light) for Library, update typography</li>
+<li>0.0.50 - Changes : file browser view is replaced by a single icon view page instead of treeview</li>
+<li>0.0.50 - Changes : improve phonon backend behaviour management and failure deletection (moslty tested with gstreamer and vlc)</li>
+<li>0.0.50 - Changes : add a fast navigator bar instead of the usual breadcrumb trail</li>
+<li>0.0.50 - Changes : delete Up/down navigation arrow from ToolBar (now up/down navigation is done by clicking on scrollbar area)</li>
+<li>0.0.50 - BugFix : workaround for file access issue</li>
+<li>0.0.50 - BugFix : seekslider not working properly dependings on backends</li>
+<li>0.0.50 - BugFix : empty title for stream read from remote pls playlist </li>
+<li>0.0.50 - BugFix : workaround for failed stream detection stream </li>
+<li>0.0.50 - BugFix : crash on navigation prev/next and navigator bar interaction</li>
+  
+<h3>0.0.49 - PUBLIC RELEASE - May 2011</h3>
+<li>0.0.49 - New : smart predefined playlists</li>
+<li>0.0.49 - Changes statusbar message to display database update progress percent</li>
+<li>0.0.49 - Internal Code rewriting (database builder merge)</li>
+  
+<h3>0.0.48 - New (Hot) lastFM scrobbling support, experimental :)</h3>
+<li>0.0.48 - New : playback option (repeat, shuffle)</li>
+<li>0.0.48 - New : basic keyboard shortcut support</li>
+<li>0.0.48 - New : option to display album in a simple grid</li>
+<li>0.0.48 - Changes : simplify statusbar message</li>
+<li>0.0.48 - Changes : update Czech translation, thanks to Pavel ;)</li>
+<li>0.0.48 - Changes : minor UI update for better lookin with ubuntu/gnome default theme</li>
+<li>0.0.48 - BugFix : button in context view without text or icon</li>
+  
+<h3>0.0.47 - PUBLIC RELEASE - April 2011</h3>
+<li>0.0.47 - Add track playcount support into database</li>
+  
+<h3>0.0.46 - New : use lib echonest to provide artist bio, image & similar</h3>
+<li>0.0.46 - New : add providers for lyrics download</li>
+<li>0.0.46 - New : lyrics can be saved to & retrieve from local file</li>
+<li>0.0.46 - New : add button to context view with a link to last Fm artist page</li>
+<li>0.0.46 - GUI : minor change for statusbar messages</li>
+  
+<h3>0.0.45 - New history view (last played track & stream)</h3>
+<li>0.0.45 - New add a view to sort album by date</li>
+<li>0.0.45 - Changes : disable playqueue track internal move :(</li>
+<li>0.0.45 - Changes : improve algorithm to sort album by genre </li>
+<li>0.0.45 - Changes : improve Drag & Drop from collection to playqueue</li>
+<li>0.0.45 - Changes : code refactoring for internal data management</li>
+<li>0.0.45 - Changes : code refactoring & optimisation (use QPixmapCache)</li>
+<li>0.0.45 - Changes : graphicviewwidget.cpp (class inhérit from QGraphicsView )</li>
+<li>0.0.45 - Changes : fix selection into menu view (selection follow the good page)</li>
+<li>0.0.45 - Changes : display history view with one category for one day</li>
+<li>0.0.45 - Changes : minor code rewrite for contexte view</li>
+<li>0.0.45 - BugFix  : lot of minor bug fixes & minor regression </li>
+<li>0.0.45 - BugFix  : major fix shoutcast file download</li>
+<li>0.0.45 - BugFix  : fix up/down navigation for radio browser</li>
+  
+<h3>0.0.44 - New multiple database support</h3>
+<li>0.0.44 - New add InfoResolver class to centralize now playing info & metadata</li>
+<li>0.0.44 - GUI add right clic menu on main menu</li>
+<li>0.0.44 - GUI change time tracking slider</li>
+<li>0.0.44 - Change internals Playlist support (no file anymore, only saved into Db)</li>
+<li>0.0.44 - BugFix wrong database update on user rename album action</li>
+<li>0.0.44 - BugFix view update on playlist status item change</li>
+  
+<h3>0.0.43 - New add visual icon for broken media item or stream</h3>
+<li>0.0.43 - New audio equalizer</li>
+<li>0.0.43 - New simple application minimal mode widget</li>
+<li>0.0.43 - New copy of icecast & shoutcast file during first run of application   </li>
+<li>0.0.43 - New filer browser not loaded at startup (only on demand)</li>
+<li>0.0.43 - GUI simplify & clean GUI, icon, hidden menuBar </li>
+<li>0.0.43 - GUI change playlist image into browser</li>
+<li>0.0.43 - GUI add splitter collapser</li>
+<li>0.0.43 - GUI add visual item selection</li>
+<li>0.0.43 - GUI change icon set, rewrite menu</li>
+<li>0.0.43 - GUI change custom splitter handle</li>
+<li>0.0.43 - BugFix breadcrumb apppearance under GNOME desktop</li>
+<li>0.0.43 - BugFix When stream list is reloaded, activated item is false due to error defore reloading</li>
+<li>0.0.43 - BugFix Single application use correction</li>
+<li>0.0.43 - BugFix delete a media from playlist crash</li>
+  
+<h3>0.0.42 - PUBLIC RELEASE - February 2011</h3>
+<li>0.0.42 - New Context View (artist, album lyrics info)</li>
+<li>0.0.42 - New BreadCrumb with navigation capabilities</li>
+<li>0.0.42 - Change clean up code</li>
+<li>0.0.42 - Change Code refactoring (Menu, GlobalAction view switching)</li>
+<li>0.0.42 - Change Grouping view collectionwidget/radiowidget/contextwidget</li>
+<li>0.0.42 - Change icon for stream and empty cover change</li>
+<li>0.0.42 - BugFix multiple access to database crash (when playlist is beieg populated)</li>
+<li>0.0.42 - BugFix breadcrumb restore initialization</li>
+<li>0.0.42 - BugFix drag drop from fileBrowser to playlist (local file)</li>
+<li>0.0.42 - BugFix graphic status for playing item not update</li>
+  
+<h3>0.0.41 - PUBLIC RELEASE - december 2010</h3>
+<li>0.0.41 - New ToolBar with Prev/Next browsing, read only BreadCrumb  </li>
+<li>0.0.41 - Change (MAJOR) music collection redesign (less memory usage, better performance) </li>
+<li>0.0.41 - New ShoutCast radio browser </li>
+<li>0.0.40 - BugFix streammodel missing active stream initialization</li>
+<li>0.0.40 - New favorite radio item (stored into xspf file)</li>
+<li>0.0.40 - New add support for remote playlist to be played diectly from radio browser</li>
+<li>0.0.39 - New Menu with tree structure and radio file</li>
+<li>0.0.39 - New add radio setting for adding/removing specific radio file</li>
+<li>0.0.39 - New radio browser for user radio file</li>
+<li>0.0.39 - New IceCast radio browser </li>
+<li>0.0.39 - Change core graphic painting method improvement</li>
+<li>0.0.39 - Change core thread management improvement</li>
+<li>0.0.38 - New internal Database v8 (internal & user playlist file)</li>
+<li>0.0.37 - New remote Url and remote playlist support</li>
+<li>0.0.37 - New use of QtSingle application module</li>
+<li>0.0.37 - New playlist detail view (with up/down and search fonction)</li>
+<li>0.0.37 - BugFix minor playlist view line offset correction</li>
+<li>0.0.37 - Changes playlist populator (for remote playlist support)</li>
+<li>0.0.36 - New Translation support + translations French, Czech, Spanish</li>
+<li>0.0.36 - BugFix file filtering into dialog when saving playlist</li>
+  
+<h3>0.0.35 - PUBLIC RELEASE - november 2010</h3>
+<li>0.0.35 - Basic Playlist File Browser</li>
+<li>0.0.35 - Code refactoring</li>
+<li>0.0.34 - New Setting option to activate/de-activate systray</li>
+<li>0.0.34 - User Settings rewritten</li>
+<li>0.0.34 - New Menu panel on Home button </li>
+<li>0.0.34 - Simple systray </li>
+<li>0.0.33 - Change Hard coded lower case for artist/album deleted (db is now case sensitive)</li>
+<li>0.0.33 - Change Now playing cover art display simplification</li>
+<li>0.0.33 - BugFix Now playing database search for title playing </li>
+<li>0.0.33 - Change default image for empty cover art pre-sized to useful value</li>
+<li>0.0.33 - New support load/save playlist from/to file (m3u, pls, xspf)</li>
+<li>0.0.32 - New automatic fetch for all the collection </li>
+<li>0.0.32 - Change Status bar Progress action</li>
+<li>0.0.32 - BugFix Status bar database search for title playing </li>
+<li>0.0.32 - New option to get cover from file directory</li>
+<li>0.0.31 - New main home icon (with collection, filer, ...)</li>
+<li>0.0.31 - Code refactoring</li>
+<li>0.0.30 - Code refactoring</li>
+<li>0.0.30 - Change, cover fetch improvment</li>
+<li>0.0.29 - BugFix Go Up navigation</li>
+<li>0.0.29 - BugFix play track from collection</li>
+  
+<h3>0.0.28 : PUBLIC RELEASE - october 2010</h3>
+<li>0.0.27 : BugFix Genre database modification</li>
+<li>0.0.26 : New up/down navigation into collection</li>
+<li>0.0.25 : BugFix collection favorite view</li>
+<li>0.0.24 : New collection favorite view</li>
+<li>0.0.23 : BugFix Genre View</li>
+<li>0.0.22 : New genre view</li>
+<li>0.0.21 : New search cover from last FM</li>
+<li>0.0.21 : New statubar with info (playlist, collection, now playing)</li>
+<li>0.0.21 : Change playlist and now playing grouped</li>
+<li>0.0.21 : Change search into collection (new filtering method)</li>
+<li>0.0.21 : code clean up, unused code</li>
+  
+<h3>0.0.20 : PUBLIC RELEASE - september 2010</h3>
+<li>0.0.20 : Bug fix Major playing track from track view</li>
+<li>0.0.19 : New architecture design between database and collection viewer (model added)   </li>
+<li>0.0.18 : New simple file browser view</li>
+<li>0.0.18 : Bug fix severals minor bug</li>
+<li>0.0.17 : Change minor changes/improvements</li>
+<li>0.0.17 : Bug fix wrong database modification fix</li>
+  
+<h3> 0.0.16 : PUBLIC RELEASE - august 2010</h3>
+<li>0.0.16 : New search into collection feature</li>
+<li>0.0.16 : Bug Fix severals minor bug fix</li>
+<br>
+<br>

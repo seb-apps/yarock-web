@@ -1,0 +1,138 @@
+---
+layout: default
+title: Yarock - Installation
+menuItem: install
+---
+<h1>Installation</h1>
+<h2>Dependancies</h2>
+<p>
+You need CMake (CMake >= 2.8.0) and the development packages for the followings libraries:
+
+
+    <table class="table_dep">
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" disabled="disabled" />
+        <label for="checkboxG4" class="css-label">TagLib 1.6.2</label>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" disabled="disabled" />
+        <label for="checkboxG4" class="css-label">Qt > 4.7.0 or Qt > 5.0.0</label>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" disabled="disabled" />
+        <label for="checkboxG4" class="css-label">QJson 0.7.1 (only if Qt4)</label>
+    </td>
+    </tr>
+    </table>
+    
+    <br>
+    <strong>Audio back-ends</strong>
+    <p>
+    For audio engine dependencies you can choose one or all of the followings libraries.Attention, on your system the vlc/libvlc shall be build 
+    with the same Qt version as yarock for vlc audio engine to work.
+    </p>
+
+    <table class="table_dep">
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" />
+        <label for="checkboxG4" class="css-label">Phonon 4.6.0  (default, optional if other back-end selected)</label>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
+        <label for="checkboxG4" class="css-label">Libvlc</label>
+    </td>    
+    </tr>
+    
+    <tr>
+    <td>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
+        <label for="checkboxG4" class="css-label">Libmpv</label>
+    </td>
+    </tr>
+    </table>
+    
+</p>    
+<br>    
+<p>    
+For example, on a Debian/Ubuntu system type:
+<pre>
+   sudo apt-get install build-essential libqt4-dev libtag1-dev libqjson-dev [libphonon-dev | libvlc-dev | mpv ]
+</pre>
+</p>   
+   
+   
+<h2>Compiling</h2>
+<pre>
+    mkdir build && cd build
+    cmake ..
+    make
+</pre>    
+    
+<p>You can build yarock with alternate audio engine (phonon is the default one).</p>
+
+For VLC
+<pre>
+    cmake ..  -DENABLE_VLC=ON
+</pre>
+
+For MPV
+<pre>
+    cmake ..  -DENABLE_MPV=ON
+</pre>
+    
+For all audio back-ends
+<pre>
+    cmake ..  -DENABLE_VLC=ON -DENABLE_MPV=ON -DENABLE_PHONON=ON    
+</pre>
+    
+    
+    
+<h2>Installation</h2>
+<pre>
+    make install (as root)
+</pre>
+
+<br>
+<h1>Linux package</h1>
+<p>
+I do not provides package for distribution (first because yarock is easy to build ;), and then because I have no time 
+left to work and maintain package.
+
+If you are linux user/packager, you can send me mail in order to add your distro tips to install yarock. Thanks !
+
+In order to help you can use folowings unofficial user package system if you want.
+</p>
+
+<h4>Ubuntu user</h4>
+<pre>
+    sudo add-apt-repository ppa:samrog131/ppa
+    sudo apt-get update
+    sudo apt-get install yarock
+</pre>
+
+<h4>Gentoo user </h4>
+You can use the following user <a href="http://isebaro.com/gentoo/?ln=en">package</a>.
+
+<h4>Arch user</h4>
+To install YaRock on Arch Linux, Manjaro, you need to update the repository index, install yaourt 
+and install yarock, via the AUR repository:
+
+<pre>
+    sudo pacman -Sy yaourt
+    sudo yaourt yarock
+</pre>
+
+
+<br>
+<br>

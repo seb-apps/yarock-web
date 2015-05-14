@@ -1,0 +1,11 @@
+name: Yarock
+markdown: redcarpet
+baseurl:
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
+

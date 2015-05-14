@@ -1,0 +1,33 @@
+{% include header.html %}
+<body>
+<div class="main">
+
+<div class="header">
+  <div class="header_resize">
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/seb-apps/yarock/master/icon/yarock_64x64.png" alt="yarock">
+      <h1><a href="/index.html">Yarock <span>player</span></a><small></small></a></h1>
+      <h2>Modern and elegant linux music player</h2>
+    </div>
+    <div class="menu_nav">
+      {% include menu.html %}
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+
+
+  <div class="clr"></div>
+
+  <div class="content">
+    <div class="content_resize">
+        {{ content }}
+      <div class="clr"></div>
+    </div>
+  </div>
+
+{% include footer.html %}
+</div>
+</body>
+</html>
