@@ -48,15 +48,15 @@ You need CMake (CMake >= 2.8.0) and the development packages for the followings 
     <table class="table_dep">
     <tr>
     <td>
-        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" />
-        <label for="checkboxG4" class="css-label">Phonon 4.6.0  (default, optional if other back-end selected)</label>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
+        <label for="checkboxG4" class="css-label">Phonon 4.6.0 </label>
     </td>
     </tr>
     
     <tr>
     <td>
-        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
-        <label for="checkboxG4" class="css-label">Libvlc</label>
+        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" checked="checked" />
+        <label for="checkboxG4" class="css-label">Libvlc (default, optional if other back-end selected)</label>
     </td>    
     </tr>
     
@@ -70,14 +70,67 @@ You need CMake (CMake >= 2.8.0) and the development packages for the followings 
     
 </p>    
 <br>    
-<p>    
-For example, on a Debian/Ubuntu system type:
+
+<h2>Dependancies preparation</h2>
+<b> On UBUNTU 15.10 fresh install</b>
+
+Install following packages using "sudo apt-get install <PACKAGE>"
 <pre>
-   sudo apt-get install build-essential libqt4-dev libtag1-dev libqjson-dev [libphonon-dev | libvlc-dev | mpv ]
+  - cmake
+  - qt4-dev-tools
+  - libqjson-dev
+  - libtag1-dev
+  - libhtmlcxx-dev
+  - libphonon-dev [libvlc-dev,libmpv-dev]
 </pre>
-</p>   
-   
-   
+    
+Running Time Dependancies
+<pre>
+  - libqt4-sql-sqlite
+</pre>
+    
+For Qt5 build use followings packages:
+<pre>
+  - cmake
+  - qtbase5-dev
+  - qtbase5-private-dev
+  - qtbase5-dev-tools
+  - qttools5-dev-tools
+  - qttools5-dev
+  - libqt5x11extras5-dev
+  - libtag1-dev
+  - libhtmlcxx-dev
+  - libphonon4qt5-dev [libvlc-dev,libmpv-dev]
+</pre>
+
+<b> On FEDORA 23 fresh install</b>
+Install following packages using "sudo dnf install <PACKAGE>"
+<pre>
+  - cmake, gcc-c++
+  - qt4-devel
+  - qjson-devel
+  - taglib-devel, taglib-extras-devel
+  - htmlcxx, htmlcxx-devel
+  - phonon-devel [vlc-devel, libmpv-devel]
+</pre>
+
+Launch cmake command
+> cd build
+> cmake .. -DENABLE_VLC=ON -DENABLE_MPV=ON
+
+For Qt5 build use followings packages:
+<pre>
+  - cmake, gcc-c++
+  - qt5-qtbase-devel
+  - qt5-qtx11extras-devel
+  - qt5-linguist
+  - taglib-devel, taglib-extras-devel
+  - htmlcxx, htmlcxx-devel
+  - phonon-qt5-devel [vlc-devel, libmpv-devel] 
+</pre>
+
+<br>
+
 <h2>Compiling</h2>
 <pre>
     mkdir build && cd build
