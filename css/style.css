@@ -333,6 +333,17 @@ a.btn-bl {
   margin-bottom: 15px;
 }
 
+a.btn-donate {
+  display: inline-block;
+  padding: 1% 2%;
+  background-color: #ffcc00;
+  color: #fff;
+  text-decoration: none!important;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 /* ***************************************************** */
 table {
   border-collapse: collapse;
