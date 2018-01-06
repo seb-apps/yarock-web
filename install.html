@@ -3,7 +3,43 @@ layout: default
 title: Yarock - Installation
 menuItem: install
 ---
-<h1>Installation</h1>
+
+<h1>Linux package</h1>
+<p>
+I do not provides package for distribution (first because yarock is easy to build ;), and then because I have no time 
+left to work and maintain package.
+
+If you are linux user/packager, you can send me mail in order to add your distro tips to install yarock. Thanks !
+
+In order to help you can use folowings unofficial user package system if you want.
+</p>
+
+<h4>Ubuntu user</h4>
+
+And unofficial PPA contains the new release for Ubuntu 17.04, Ubuntu 17.10, Ubuntu 18.04. Due to requirement of Qt >=5.6, Support for Ubuntu 16.04 ends up with Yarock 1.2.0.
+
+<pre>
+    sudo apt-get update
+    sudo add-apt-repository ppa:ubuntuhandbook1/apps
+    sudo apt-get update
+    sudo apt-get install yarock
+</pre>
+
+<h4>Gentoo user </h4>
+You can use the following user <a href="http://isebaro.com/gentoo/?ln=en">package</a>.
+
+<h4>Arch user</h4>
+To install YaRock on Arch Linux, Manjaro, you need to update the repository index, install yaourt 
+and install yarock, via the AUR repository:
+
+<pre>
+    sudo pacman -Sy yaourt
+    sudo yaourt yarock
+</pre>
+
+
+<br>
+<h1>Build from sources</h1>
 <h2>Dependancies</h2>
 <p>
 You need CMake (CMake >= 2.8.0) and the development packages for the followings libraries:
@@ -161,39 +197,4 @@ For all audio back-ends
 </pre>
 
 <br>
-<h1>Linux package</h1>
-<p>
-I do not provides package for distribution (first because yarock is easy to build ;), and then because I have no time 
-left to work and maintain package.
 
-If you are linux user/packager, you can send me mail in order to add your distro tips to install yarock. Thanks !
-
-In order to help you can use folowings unofficial user package system if you want.
-</p>
-
-<h4>Ubuntu user</h4>
-
-And unofficial PPA contains the new release for Ubuntu 17.04, Ubuntu 17.10, Ubuntu 18.04. Due to requirement of Qt >=5.6, Support for Ubuntu 16.04 ends up with Yarock 1.2.0.
-
-<pre>
-    sudo apt-get update
-    sudo add-apt-repository ppa:ubuntuhandbook1/apps
-    sudo apt-get update
-    sudo apt-get install yarock
-</pre>
-
-<h4>Gentoo user </h4>
-You can use the following user <a href="http://isebaro.com/gentoo/?ln=en">package</a>.
-
-<h4>Arch user</h4>
-To install YaRock on Arch Linux, Manjaro, you need to update the repository index, install yaourt 
-and install yarock, via the AUR repository:
-
-<pre>
-    sudo pacman -Sy yaourt
-    sudo yaourt yarock
-</pre>
-
-
-<br>
-<br>
