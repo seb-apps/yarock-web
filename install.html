@@ -172,24 +172,24 @@ For Qt5 build use followings packages:
     make
 </pre>    
     
-<p>You can build yarock with alternate audio engine (phonon is the default one).</p>
+<p>You can build yarock with alternate audio engine (vlc is the default one).
+Use the following cmake option to activate/deactivate audio engine as you want.</p>
 
-For VLC
-<pre>
-    cmake ..  -DENABLE_VLC=ON
-</pre>
-
-For MPV
-<pre>
-    cmake ..  -DENABLE_MPV=ON
-</pre>
-    
-For all audio back-ends
 <pre>
     cmake ..  -DENABLE_VLC=ON -DENABLE_MPV=ON -DENABLE_PHONON=ON    
+    cmake ..  -DENABLE_VLC=OFF -DENABLE_MPV=OFF -DENABLE_PHONON=ON    
 </pre>
+
+<p>
+Yarock can be build with all audio engine activated (audio engine can we swichted from the application settings.</p>
     
-    
+<p>For Qt version, yarock can be build against Qt4 or Qt5. For Qt4 use the following cmake option:</p>
+
+<pre>
+    cmake ..  -DENABLE_QT5=OFF
+</pre>
+
+
     
 <h2>Installation</h2>
 <pre>
